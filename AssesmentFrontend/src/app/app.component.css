@@ -1,9 +1,0 @@
-.menu{
-    list-style-type: none;
-}
-
-
-.mat-drawer.mat-drawer-end {
-    position: fixed;
-    overflow: auto;
-}
