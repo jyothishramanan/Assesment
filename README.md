@@ -6,7 +6,7 @@ Send the result to Front end
 
 For aggregate API call, I have implement in People controller, 
 
-For rate limiting i have used asp .net core fixed window limiter and enabled it in controller level
+For rate limiting i have used asp .net core fixed window limiter and enabled it in controller level. Permitting 2 api calls within 10 sec. Use swagger for checking the 429 status code.
 <img width="714" alt="image" src="https://github.com/jyothishramanan/Assesment/assets/52046040/5a116570-7b49-4dbe-9233-13f1449baf47">
 
 
