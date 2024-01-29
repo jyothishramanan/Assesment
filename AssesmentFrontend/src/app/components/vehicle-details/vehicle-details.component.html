@@ -1,0 +1,58 @@
+<div class="container">
+  <div>
+    <app-header title="vehicle Details" />
+  </div>
+  <div class="column" *ngIf="vehicleDetails">
+    <div class="row">
+      <div>Title</div>
+      :
+      <div>{{ vehicleDetails.name }}</div>
+    </div>
+    <div class="row">
+      <div>Model</div>
+      :
+      <div>{{ vehicleDetails.model }}</div>
+    </div>
+    <div class="row">
+      <div>Manufacturer</div>
+      :
+      <div>{{ vehicleDetails.manufacturer }}</div>
+    </div>
+
+    <div class="row">
+      <div>Cost in Credits</div>
+      :
+      <div>{{ vehicleDetails.cost_in_credits }}</div>
+    </div>
+    <div class="row">
+      <div>Length </div>
+      :
+      <div>{{ vehicleDetails.length }}</div>
+    </div>
+    <div class="row">
+      <div>Length </div>
+      :
+      <div>{{ vehicleDetails.max_atmosphering_speed }}</div>
+    </div>
+    <div class="row">
+      <div>Crew </div>
+      :
+      <div>{{ vehicleDetails.crew }}</div>
+    </div>
+    <div class="row">
+      <div>Passengers </div>
+      :
+      <div>{{ vehicleDetails.passengers }}</div>
+    </div>
+    <div class="row">
+      <div>Cargo Capasity </div>
+      :
+      <div>{{ vehicleDetails.cargo_capacity }}</div>
+    </div>
+    <div class="row">
+      <div>Class </div>
+      :
+      <div>{{ vehicleDetails.vehicle_class }}</div>
+    </div>
+  </div>
+</div>

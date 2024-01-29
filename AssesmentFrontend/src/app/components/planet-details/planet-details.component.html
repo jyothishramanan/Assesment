@@ -1,0 +1,36 @@
+<div class="container">
+    <div>
+      <app-header title="Planet Details" />
+    </div>
+    <div class="column" *ngIf="planetDetails">
+      <div class="row">
+        <div>Name</div>
+        :
+        <div>{{ planetDetails.name }}</div>
+      </div>
+      <div class="row">
+        <div>Rotation Period</div>
+        :
+        <div>{{ planetDetails.rotation_period }}</div>
+      </div>
+
+      <div class="row">
+        <div>Orbital Period</div>
+        :
+        <div>{{ planetDetails.orbital_period }}</div>
+      </div>
+      <div class="row">
+        <div>Diameter</div>
+        :
+        <div>{{ planetDetails.diameter }}</div>
+      </div>
+
+      <div class="row">
+        <div>Climate</div>
+        :
+        <div>{{ planetDetails.climate }}</div>
+      </div>
+      
+    </div>
+  </div>
+  
