@@ -1,0 +1,28 @@
+<mat-drawer-container class="example-container" hasBackdrop="false" Style="width: 100vw; height: 100vh;">
+  <mat-drawer #drawer mode="side">
+    <ul class="menu">
+      <li><a mat-button href="" routerLink="/">Vehicle</a></li>
+      <li><a mat-button href="" routerLink="/people">People</a></li>
+      <li><a mat-button href="" routerLink="/planet">Planet</a></li>
+      <li><a mat-button href="" routerLink="/film">Film</a></li>
+      <li><a mat-button href="" routerLink="/starship">Starship</a></li>
+      <li><a mat-button href="" routerLink="/peopleaggregate">People Aggregate</a></li>
+      
+
+    </ul>
+  </mat-drawer>
+  <mat-drawer-content>
+    <mat-progress-bar mode="indeterminate" *ngIf="apiIndicator" [color]="'warn'"></mat-progress-bar>
+    <button
+      mat-icon-button
+      color="accent"
+      aria-label="Example icon button with a menu icon"
+      (click)="drawer.toggle()"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

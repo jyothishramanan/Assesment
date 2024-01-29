@@ -1,0 +1,40 @@
+<div class="container">
+    <div>
+      <app-header title="Film Details" />
+    </div>
+    <div class="column" *ngIf="filmDetails">
+      <div class="row">
+        <div>Title</div>
+        :
+        <div>{{ filmDetails.title }}</div>
+      </div>
+      <div class="row">
+        <div>Model</div>
+        :
+        <div>{{ filmDetails.episode_id }}</div>
+      </div>
+      <!-- <div class="row">
+        <div>Manufacturer</div>
+        :
+        <div>{{ filmDetails.opening_crawl }}</div>
+      </div> -->
+  
+      <div class="row">
+        <div>Cost in Credits</div>
+        :
+        <div>{{ filmDetails.director }}</div>
+      </div>
+      <div class="row">
+        <div>Length </div>
+        :
+        <div>{{ filmDetails.producer }}</div>
+      </div>
+      <div class="row">
+        <div>Length </div>
+        :
+        <div>{{ filmDetails.release_date }}</div>
+      </div>
+      
+    </div>
+  </div>
+  
