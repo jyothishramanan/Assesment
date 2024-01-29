@@ -1,0 +1,58 @@
+<div class="container">
+    <div>
+      <app-header title="People Details" />
+    </div>
+    <div class="column" *ngIf="peopleDetails">
+      <div class="row">
+        <div>Title</div>
+        :
+        <div>{{ peopleDetails.name }}</div>
+      </div>
+      <div class="row">
+        <div>Height</div>
+        :
+        <div>{{ peopleDetails.height }}</div>
+      </div>
+
+      <div class="row">
+        <div>Mass</div>
+        :
+        <div>{{ peopleDetails.mass }}</div>
+      </div>
+      <div class="row">
+        <div>Hair color</div>
+        :
+        <div>{{ peopleDetails.hair_color }}</div>
+      </div>
+
+      <div class="row">
+        <div>skin color</div>
+        :
+        <div>{{ peopleDetails.skin_color }}</div>
+      </div>
+      <div class="row">
+        <div>eye color</div>
+        :
+        <div>{{ peopleDetails.eye_color }}</div>
+      </div>
+
+      <div class="row">
+        <div>Gender</div>
+        :
+        <div>{{ peopleDetails.gender }}</div>
+      </div>
+      <div class="row">
+        <div>birth_year</div>
+        :
+        <div>{{ peopleDetails.birth_year }}</div>
+      </div>
+      <div class="row">
+        <div>Home World</div>
+        :
+        <div>{{ peopleDetails.homeworld }}</div>
+      </div>
+      
+  
+    </div>
+  </div>
+  

@@ -1,0 +1,66 @@
+<div class="container">
+    <div>
+      <app-header title="Starship Details" />
+    </div>
+    <div class="column" *ngIf="starshipDetails">
+      <div class="row">
+        <div>Name</div>
+        :
+        <div>{{ starshipDetails.name }}</div>
+      </div>
+      <div class="row">
+        <div>Model</div>
+        :
+        <div>{{ starshipDetails.model }}</div>
+      </div>
+      <div class="row">
+        <div>Manufacturer</div>
+        :
+        <div>{{ starshipDetails.manufacturer }}</div>
+      </div>
+  
+      <div class="row">
+        <div>Cost in Credits</div>
+        :
+        <div>{{ starshipDetails.cost_in_credits }}</div>
+      </div>
+      <div class="row">
+        <div>Length </div>
+        :
+        <div>{{ starshipDetails.length }}</div>
+      </div>
+      <div class="row">
+        <div>Max Atmosphering Speed </div>
+        :
+        <div>{{ starshipDetails.max_atmosphering_speed }}</div>
+      </div>
+      <div class="row">
+        <div>Crew </div>
+        :
+        <div>{{ starshipDetails.crew }}</div>
+      </div>
+      <div class="row">
+        <div>Passengers </div>
+        :
+        <div>{{ starshipDetails.passengers }}</div>
+      </div>
+      <div class="row">
+        <div>Cargo Capasity </div>
+        :
+        <div>{{ starshipDetails.cargo_capacity }}</div>
+      </div>
+      <div class="row">
+        <div>Class </div>
+        :
+        <div>{{ starshipDetails.starship_class }}</div>
+      </div>
+        <div>Films: </div>
+        <table>
+            <ul class="menu">
+                <tr *ngFor="let item of starshipDetails.films"><td><li> <a mat-button href="" routerLink="/"> {{item}}</a></li></td></tr>
+            </ul>
+       </table>
+       
+    </div>
+  </div>
+  

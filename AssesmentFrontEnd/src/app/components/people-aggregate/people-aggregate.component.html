@@ -1,0 +1,173 @@
+<div class="container">
+    <div>
+      <app-header title="People Data" />
+    </div>
+    <div>
+        <div class="column" *ngIf="peopleDetails">
+            <div class="row">
+              <div>Title</div>
+              :
+              <div>{{ peopleDetails.name }}</div>
+            </div>
+            <div class="row">
+              <div>Height</div>
+              :
+              <div>{{ peopleDetails.height }}</div>
+            </div>
+      
+            <div class="row">
+              <div>Mass</div>
+              :
+              <div>{{ peopleDetails.mass }}</div>
+            </div>
+            <div class="row">
+              <div>Hair color</div>
+              :
+              <div>{{ peopleDetails.hair_color }}</div>
+            </div>
+      
+            <div class="row">
+              <div>skin color</div>
+              :
+              <div>{{ peopleDetails.skin_color }}</div>
+            </div>
+            <div class="row">
+              <div>eye color</div>
+              :
+              <div>{{ peopleDetails.eye_color }}</div>
+            </div>
+      
+            <div class="row">
+              <div>skin color</div>
+              :
+              <div>{{ peopleDetails.gender }}</div>
+            </div>
+            <div class="row">
+              <div>eye color</div>
+              :
+              <div>{{ peopleDetails.birth_year }}</div>
+            </div>
+            <div class="row">
+              <div>eye color</div>
+              :
+              <div>{{ peopleDetails.homeworld }}</div>
+            </div>
+            
+        
+          </div>
+</div>
+
+
+<table>
+    <tr *ngFor="let vehicleDetails of vehicleResults">
+        <td>
+            <div class="container">
+                <div>
+                    <app-header title="Vehicle Details"/>
+                </div>
+                <div class="column" *ngIf="vehicleDetails">
+                  <div class="row">
+                    <div>Title</div>
+                    :
+                    <div>{{ vehicleDetails.name }}</div>
+                  </div>
+                  <div class="row">
+                    <div>Model</div>
+                    :
+                    <div>{{ vehicleDetails.model }}</div>
+                  </div>
+                  <div class="row">
+                    <div>Manufacturer</div>
+                    :
+                    <div>{{ vehicleDetails.manufacturer }}</div>
+                  </div>
+              
+                  <div class="row">
+                    <div>Cost in Credits</div>
+                    :
+                    <div>{{ vehicleDetails.cost_in_credits }}</div>
+                  </div>
+                  <div class="row">
+                    <div>Length </div>
+                    :
+                    <div>{{ vehicleDetails.length }}</div>
+                  </div>
+                  <div class="row">
+                    <div>Length </div>
+                    :
+                    <div>{{ vehicleDetails.max_atmosphering_speed }}</div>
+                  </div>
+                  <div class="row">
+                    <div>Crew </div>
+                    :
+                    <div>{{ vehicleDetails.crew }}</div>
+                  </div>
+                  <div class="row">
+                    <div>Passengers </div>
+                    :
+                    <div>{{ vehicleDetails.passengers }}</div>
+                  </div>
+                  <div class="row">
+                    <div>Cargo Capasity </div>
+                    :
+                    <div>{{ vehicleDetails.cargo_capacity }}</div>
+                  </div>
+                  <div class="row">
+                    <div>Class </div>
+                    :
+                    <div>{{ vehicleDetails.vehicle_class }}</div>
+                  </div>
+                </div>
+              </div>
+              
+
+        </td>
+    </tr>
+</table>
+
+
+<table>
+    <tr *ngFor="let filmDetails of filmResults">
+        <td>
+            <div class="container">
+                <div>
+                  <app-header title="Film Details"/>
+                </div>
+                <div class="column" *ngIf="filmDetails">
+                  <div class="row">
+                    <div>Title</div>
+                    :
+                    <div>{{ filmDetails.title }}</div>
+                  </div>
+                  <div class="row">
+                    <div>Episode</div>
+                    :
+                    <div>{{ filmDetails.episode_id }}</div>
+                  </div>
+                  <!-- <div class="row">
+                    <div>Manufacturer</div>
+                    :
+                    <div>{{ filmDetails.opening_crawl }}</div>
+                  </div> -->
+              
+                  <div class="row">
+                    <div>Director</div>
+                    :
+                    <div>{{ filmDetails.director }}</div>
+                  </div>
+                  <div class="row">
+                    <div>Producer </div>
+                    :
+                    <div>{{ filmDetails.producer }}</div>
+                  </div>
+                  <div class="row">
+                    <div>Release Date </div>
+                    :
+                    <div>{{ filmDetails.release_date }}</div>
+                  </div>
+                  
+                </div>
+              </div>
+        </td>
+    </tr>
+</table>
